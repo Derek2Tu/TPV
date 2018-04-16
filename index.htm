@@ -3,44 +3,138 @@
     <head>
 
 	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
-	    <title>index.htm</title>
+	    <title>Derek Tu's Personal Website</title>
+        <meta name="description" content="This is Derek Tu's professional website. He is product-focused entrepreneur interested in venture capital, blockchain infrastructure, and enterprise technology.">
+        <meta name="keywords" content="professional, product management, entrepreneur, founder, venture capital">
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css"/>
+        
+        <style type="text/css">
+            
+            @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+            #derek {
+                float: left;
+                padding-right: 2em;
+            }
+            
+            #summary {
+                margin: 2em;
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            
+            #highlights {
+                margin: 3em;
+                padding-top: 3em;
+                background-size: 100%;
+                align-items: center;
+                
+            }
+            
+            .column {
+                float: left;
+                width: 33.33%;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column {
+                float: center;
+            }
+
+            .left, .right, .middle {
+                width: 33%;
+            }
+            
+            /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
+            }
+            
+            /* footer {
+                background-color: white;
+                padding-bottom: 50px;
+            } */
+
+        </style>
         
     </head>
     
     <body>
-        <h1><a href=index.htm>Derek Tu</a></h1>
-        
-        <h3><a href=experience.htm>experience</a>&nbsp;&nbsp;&nbsp;<a href=features.htm>features</a>&nbsp;&nbsp;&nbsp;           <a href=blog.htm>blog</a>&nbsp;&nbsp;&nbsp;<a href=contact.htm>contact</a></h3>
-        
-        <img src=pic-derek.jpg alt="Derek" usemap="#derekmap">
+        <div id="jumbotron">
+                <div class="topnav">
+                    <a href=index.htm>home</a>
+                    <!--<a href=experience.htm>experience</a>-->
+                    
+                    <div class="dropdown">
+                     <button class="dropbtn">experience
+                       <i class="fa fa-caret-down"></i>
+                     </button>
+                     <div class="dropdown-content">
+                       <a href="experience.htm">Timeline</a>
+                       <a href="resume.htm">Resume</a>
+                     </div>
+                    </div>
+                    
+                    &nbsp;&nbsp;&nbsp;<a href=features.htm>features</a>
+                    &nbsp;&nbsp;&nbsp;<a href=blog.htm>blog</a>
+                    &nbsp;&nbsp;&nbsp;<a href=contact.htm>contact</a></div>
+            
+                <h1>Hi, My Name is Derek Tu</h1>
+        </div>
 
-        <map name="derekmap">
-          <area shape="circle" coords="69,42,31" href="https://www.facebook.com/derek.tu2" alt="fb-derek">
-          <area shape="circle" coords="95,102,15" href=https://www.facebook.com/prabha.dublish alt="fb-prabha">
-        </map>
+ 
+        <div id="summary">
+            <img id="derek" title="mypic" src=pic-derek.jpg alt="Derek" usemap="#derekmap">
+        
+            <map name="derekmap">
+              <area shape="circle" coords="69,42,31" href="https://www.facebook.com/derek.tu2" alt="fb-derek">
+              <area shape="circle" coords="95,102,15" href=https://www.facebook.com/prabha.dublish alt="fb-prabha">
+            </map>
+
+            <p>product-focused entrepreneur interested in venture capital, blockchain infrastructure, and enterprise                 technology.<br><br>allergic to inefficiencies and the patriarchy.</p>
+        </div>
+        
+        <div id="highlights">
+            
+            <div class="row">
                 
-        <p>product-focused entrepreneur interested in venture capital, blockchain infrastructure, and Eeterprise                 technology.<br><br>allergic to inefficiencies and, the patriarchy.</p>
-        
-        <h2>Present</h2>
-        <p>co-founder at <a href="http://www.womentum.io">Womentum</a>&nbsp;&nbsp;<i class="em em-female_sign"></i><br>
-           consultant at <a href="http://www.vertoanalytics.com/">Verto Analytics</a>&nbsp;&nbsp;<i class="em em-iphone"></i><br>
-           executive at <a href="http://www.kairossociety.org">Kairos Society</a>&nbsp;&nbsp;<i class="em em-earth_americas"></i><br>
-        </p>
-        
-        <h2>Past</h2>
-        <p>student fellow at <a href="http://www.roughdraft.vc/">Rough Draft Ventures</a>&nbsp;&nbsp;<i class="em em-dollar"></i><br>
-           product intern at <a href="http://www.flywire.com/">Flywire</a>&nbsp;&nbsp;<i class="em em-airplane"></i><br>
-           co-founder at <a href="http://www.getvidvision.com">Vidvision</a>  (<a href=http://www.babson.edu/Academics/centers/blank-center/butler-launch-pad/summer-venture-program/Pages/summer-venture-program.aspx>svp '17</a>)&nbsp;&nbsp;<i class="em em-video_camera"></i><br>
-           president of <a href="http://www.etower.org/">eTower</a>&nbsp;&nbsp;<i class="em em-house"></i><br>
-        </p>
-        
-        <h2>Future</h2>
-        <p>Product Manager at <a href="http://www.wayfair.com/">Wayfair</a>&nbsp;&nbsp;<i class="em em-couch_and_lamp"></i>
+                  <div class="column">
+                    <h2>Present</h2>
+                    <p>co-founder at <a href="http://www.womentum.io">Womentum</a>&nbsp;&nbsp;<i class="em em-female_sign"></i><br>
+                    consultant at <a href="http://www.vertoanalytics.com/">Verto Analytics</a>&nbsp;&nbsp;<i class="em em-iphone"></i><br>
+                    executive at <a href="http://www.kairossociety.org">Kairos Society</a>&nbsp;&nbsp;<i class="em em-earth_americas"></i><br>
+                    </p>
+                  </div>
+                
+                  <div class="column">
+                       <h2>Past</h2>
+            <p>student fellow at <a href="http://www.roughdraft.vc/">Rough Draft Ventures</a>&nbsp;&nbsp;<i class="em em-dollar"></i><br>
+               product intern at <a href="http://www.flywire.com/">Flywire</a>&nbsp;&nbsp;<i class="em em-airplane"></i><br>
+               co-founder at <a href="http://www.getvidvision.com">Vidvision</a>  (<a href=http://www.babson.edu/Academics/centers/blank-center/butler-launch-pad/summer-venture-program/Pages/summer-venture-program.aspx>svp '17</a>)&nbsp;&nbsp;<i class="em em-video_camera"></i><br>
+               president of <a href="http://www.etower.org/">eTower</a>&nbsp;&nbsp;<i class="em em-house"></i><br>
+            </p>       
+                  </div>
+                
+                  <div class="column">
+                       <h2>Future</h2>
+            <p>Product Manager at <a href="http://www.wayfair.com/">Wayfair</a>&nbsp;&nbsp;<i class="em em-couch_and_lamp"></i>
+                  </div>
+            </div>    
+        </div>
         
     </body>
     
     <footer>
+        
         <br>
         <p><a href=sitemap.htm>sitemap</a></p>
     </footer>

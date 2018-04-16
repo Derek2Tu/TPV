@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+body {
+               background-image: url("background-index.jpeg");
+               background-repeat: no-repeat;
+               background-size: 100%;
+               background-color: #EADEDB;  
+               width:100%;
+            }
+ p, form {
+                color: 555555;
+                font-family: "Source Sans Pro";
+                font-size: 1em;
+            }
+
+li {
+                color: 555555;
+                font-family: "Source Sans Pro";            
+                font-height: 3em;
+}
+
+h2 {
+                color: 555555;
+                font-family: "Source Sans Pro";
+                font-size: 1.5em;
+            } 
+
+label, input, textarea {
+                color: 555555;
+                font-family: "Source Sans Pro";
+                font-size: 1em;
+                font-weight: 520;
+}
+
+.topnav {
+                overflow: hidden;
+            }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 1.5em;
+                font-family: "Source Sans Pro";
+            }
+
+
+            /* The dropdown container */
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+              font-size: 1.5em; 
+              border: none;
+              outline: none;
+              color: white;
+              padding: 14px 16px;
+              background-color: inherit;
+              font-family: "Source Sans Pro"; /* Important for vertical align on mobile phones */
+              margin: 0; /* Important for vertical align on mobile phones */
+            }
+
+/* Change the color of links on hover */
+.topnav a:hover, .dropdown:hover .dropbtn  {
+                background-color: #EADEDB; 
+                color: black;
+            }
+
+.dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+                  float: none;
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+                  background-color: #EADEDB;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+                  display: block;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+                color: white;
+            }
+            
+h1 {
+                font-size: 5em;
+                text-align: center;
+                color: white;
+                font-family: "Source Sans Pro";
+            }
+            
+#jumbotron {
+                padding-bottom: 50px;
+            }
+            
+            
