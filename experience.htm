@@ -195,11 +195,22 @@
             
             resume {
                 text-align: center;
-            }
-            
-           
+            } 
         
         </style>
+        
+        <script>
+                function bigImg(x) {
+                    x.style.height = "150px";   
+                }
+
+                function normalImg(x) {
+                    x.style.height = "100px";  
+                }
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     </head>
     
     <body>
@@ -229,7 +240,7 @@
         <div class="timeline">
                   <div class="container left">
                     <div class="content">
-                      <img height=100px; title="svp" alt="babsonsvp" src=https://i2.wp.com/blogs.babson.edu/entrepreneurship/files/2017/05/BLKMKT-2273-SummerVentureProgramLogo_1280x720_no-location.jpg?resize=600%2C386>
+                      <a href=http://www.babson.edu/Academics/centers/blank-center/butler-launch-pad/summer-venture-program/Pages/summer-venture-program.aspx><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" height=100px; title="svp" alt="babsonsvp" src=https://i2.wp.com/blogs.babson.edu/entrepreneurship/files/2017/05/BLKMKT-2273-SummerVentureProgramLogo_1280x720_no-location.jpg?resize=600%2C386></a>
                       <h2>Babson Summer Venture Program<br>(Summer 2017)</h2>
                       <p>Worked on a marketing tech company I started in my dorm room with a friend. Won some prize money and got some initial traction.</p>
                         
@@ -238,7 +249,7 @@
             
                   <div class="container right">
                   <div class="content">
-                       <img height=100px; title="rdv" alt="rough draft ventures" src=https://cdn.b12.io/client_media/BiEC9pgh/7e73e280-7ead-11e6-8365-0242ac110002.c89a530e-791b-11e6-9758-0242ac110002.rdv_logo.png>
+                      <a href=http://www.roughdraft.vc><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" height=100px; title="rdv" alt="rough draft ventures" src=https://cdn.b12.io/client_media/BiEC9pgh/7e73e280-7ead-11e6-8365-0242ac110002.c89a530e-791b-11e6-9758-0242ac110002.rdv_logo.png></a>
                       <h2>Rough Draft Ventures<br>(September 2016)</h2>
                       <p>Became a Student Partner at Rough Draft Ventures and invested in some amazing student founders across Boston.</p>
                   </div>
@@ -246,7 +257,7 @@
             
                   <div class="container left">
                     <div class="content">
-                      <img height=80px; title="fly" alt="flywire" src=https://www.datocms-assets.com/2981/1502969752-logo.svg?width=false&auto=compress>
+                        <a href=http://www.flywire.com><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  height=100px; title="fly" alt="flywire" src=flylogo.png></a>
                       <h2>Flywire (Summer 2016)</h2>
                       <p>Helped the company build out processes for interviewing customers in their tuition payment vertical.</p>
                     </div>
@@ -275,9 +286,6 @@
             </form> 
         </div>
        
-    
-    
-    
     
         
     </body>

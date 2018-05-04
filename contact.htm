@@ -7,6 +7,10 @@
         <meta name="description" content="Submit the form below to contact Derek Tu">
         <meta name="keywords" content="contact, professional, message, email, communicate">
         <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         
         <style type="text/css">
             input[type=text], select, textarea {
@@ -44,6 +48,32 @@
             }
         </style>
         
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["fname"].value;
+                var y = document.forms["myForm"]["lname"].value;
+                
+                if (x == "") {
+                    alert("First name must be filled out");
+                    return false;
+                }
+                else if (y == "") {
+                    alert("Last name must be filled out");
+                    return false;
+                }
+                else {
+                    return false;
+                }
+            } 
+            
+             
+            $( function() {
+                $( document ).tooltip();
+            } );
+
+        
+        </script>
+        
     </head>
     
     <body>
@@ -71,7 +101,7 @@
 
                 
         <div class="container">
-          <form>
+          <form id="myForm">
 
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -79,10 +109,10 @@
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-            <label for="subject">Subject</label>
+            <label title="Would love to hear from you!" for="subject">Subject</label>
             <textarea id="message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <input type="submit" onclick="validateForm()" value="Submit">
 
           </form>
         </div>

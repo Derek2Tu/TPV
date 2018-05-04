@@ -32,6 +32,14 @@
                 
             }
             
+            #travels {
+                margin: 3em;
+                padding-top: .5em;
+                background-size: 100%;
+                align-items: center;
+                
+            }
+            
             .column {
                 float: left;
                 width: 33.33%;
@@ -63,12 +71,45 @@
                 background-color: white;
                 padding-bottom: 50px;
             } */
+            
+            .container{
+                position:relative;
+                width:100%;
+                height:500px;
+                border-radius:5px;
+                overflow:hidden;
+            }
 
         </style>
         
+        <script>
+            function myFunction() {
+                document.getElementById("text").innerHTML = "我的名字是屠宇恒。";
+            }
+            
+
+            var i = 0;
+            var txt = 'Hi, My Name is Derek Tu.';
+            var speed = 50;
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("text").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            
+
+
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+        
     </head>
     
-    <body>
+    <body onload="typeWriter()">
         <div id="jumbotron">
                 <div class="topnav">
                     <a href=index.htm>home</a>
@@ -88,7 +129,7 @@
                     &nbsp;&nbsp;&nbsp;<a href=blog.htm>blog</a>
                     &nbsp;&nbsp;&nbsp;<a href=contact.htm>contact</a></div>
             
-                <h1>Hi, My Name is Derek Tu</h1>
+                <h1 id="text" onclick="myFunction()"></h1>
         </div>
 
  
@@ -130,6 +171,60 @@
                   </div>
             </div>    
         </div>
+        
+        <div id="travels">
+            <div class="row">
+                
+                  <div class="column">
+                    <h2>Recent Travels</h2>
+                  </div>
+                
+                  <div class="column">
+                    
+                  </div>
+                
+                  <div class="column">
+                  </div>
+            </div>  
+            <p><i class="em em-round_pushpin"></i> Shanghai <i class="em em-round_pushpin"></i> Manila <i class="em em-round_pushpin"></i> Taipei</p>
+            <div id="imgGallary" class="container">
+                
+
+                <img src=pic1.jpg alt="" width="70%" height="500" />
+                <img src=pic2.jpg alt="" width="70%" height="500" />
+                <img src=pic3.jpg alt="" width="70%" height="500"/>
+                
+            </div>
+
+        </div>
+        
+        <script>
+            $('#derek').hover(function() {
+                  $(this).attr('src', 'altpic.jpg');
+                }, function() {
+                  $(this).attr('src', 'pic-derek.jpg');
+                });
+            
+            (function(){
+                
+                
+            var imgLen = document.getElementById('imgGallary');
+            var images = imgLen.getElementsByTagName('img');
+            var counter = 1;
+
+                    if(counter <= images.length){
+                        setInterval(function(){
+                            images[0].src = images[counter].src;
+                            console.log(images[counter].src);
+                            counter++;
+
+                            if(counter === images.length){
+                                counter = 1;
+                            }
+                        },4000);
+                    }
+            })();
+        </script>
         
     </body>
     
