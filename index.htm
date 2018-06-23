@@ -3,11 +3,14 @@
     <head>
 
 	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
 	    <title>Derek Tu's Personal Website</title>
         <meta name="description" content="This is Derek Tu's professional website. He is product-focused entrepreneur interested in venture capital, blockchain infrastructure, and enterprise technology.">
         <meta name="keywords" content="professional, product management, entrepreneur, founder, venture capital">
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="main.css"/>
+
         
         <style type="text/css">
             
@@ -20,7 +23,7 @@
             
             #summary {
                 margin: 2em;
-                font-size: 1.5em;
+                font-size: 1.2em;
                 font-weight: 500;
             }
             
@@ -110,69 +113,98 @@
     </head>
     
     <body onload="typeWriter()">
-        <div id="jumbotron">
-                <div class="topnav">
-                    <a href=index.htm>home</a>
-                    <!--<a href=experience.htm>experience</a>-->
-                    
-                    <div class="dropdown">
-                     <button class="dropbtn">experience
-                       <i class="fa fa-caret-down"></i>
-                     </button>
-                     <div class="dropdown-content">
-                       <a href="experience.htm">Timeline</a>
-                       <a href="resume.htm">Resume</a>
-                     </div>
-                    </div>
-                    
-                    &nbsp;&nbsp;&nbsp;<a href=features.htm>features</a>
-                    &nbsp;&nbsp;&nbsp;<a href=blog.htm>blog</a>
-                    &nbsp;&nbsp;&nbsp;<a href=contact.htm>contact</a></div>
+        
+        <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        
+     
+        
+        <div class="jumbotron vertical-center">
             
-                <h1 id="text" onclick="myFunction()"></h1>
+             <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collection of nav links and other content for toggling -->
+                        
+                 
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.htm">home</a></li>
+                                <li><a href="features.htm">features</a></li>
+                                <li><a href="blog.htm">blog</a></li>
+                            </ul>
+
+                        </div>
+            </nav> 
+    
+
+            <div style="padding-top: 15px">
+
+                    <h1 id="text" onclick="myFunction()"></h1>
+            </div>
         </div>
 
  
-        <div id="summary">
-            <img id="derek" title="mypic" src=pic-derek.jpg alt="Derek" usemap="#derekmap">
-        
-            <map name="derekmap">
-              <area shape="circle" coords="69,42,31" href="https://www.facebook.com/derek.tu2" alt="fb-derek">
-              <area shape="circle" coords="95,102,15" href=https://www.facebook.com/prabha.dublish alt="fb-prabha">
-            </map>
+        <div id="summary"> 
+            <div class="row">
+                <div class="col-md-3">
+                    <img id="derek" title="mypic" src=pic-derek.jpg alt="Derek" usemap="#derekmap">
+              
+                
+                    <!--<map name="derekmap">
+                      <area shape="circle" coords="69,42,31" href="https://www.facebook.com/derek.tu2" alt="fb-derek">
+                      <area shape="circle" coords="95,102,15" href=https://www.facebook.com/prabha.dublish alt="fb-prabha">
+                    </map>-->
+                </div>
+                
+                
 
-            <p>product-focused entrepreneur interested in venture capital, blockchain infrastructure, and enterprise                 technology.<br><br>allergic to inefficiencies and the patriarchy.</p>
+                <div class="col-md-9">
+                    <p>product-focused entrepreneur interested in venture capital, blockchain infrastructure, and enterprise technology.<br><br>allergic to inefficiencies and the patriarchy.</p>
+                    <br>
+                    <p><a href="mailto:ytu1@babson.edu">email</a>&nbsp; &nbsp;|&nbsp;&nbsp; <a href="https://www.linkedin.com/in/derek2tu/">linkedin</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="https://twitter.com/Derek2Tu">twitter</a></p>
+                </div>
+
+            </div>
         </div>
+        
+        
         
         <div id="highlights">
-            
             <div class="row">
                 
-                  <div class="column">
+                  <div class="col-md-4">
                     <h2>Present</h2>
-                    <p>co-founder at <a href="http://www.womentum.io">Womentum</a>&nbsp;&nbsp;<i class="em em-female_sign"></i><br>
-                    consultant at <a href="http://www.vertoanalytics.com/">Verto Analytics</a>&nbsp;&nbsp;<i class="em em-iphone"></i><br>
-                    executive at <a href="http://www.kairossociety.org">Kairos Society</a>&nbsp;&nbsp;<i class="em em-earth_americas"></i><br>
-                    </p>
+                        <p>co-founder at <a href="http://www.womentum.io">Womentum</a>&nbsp;&nbsp;<i class="em em-female_sign"></i></p>
+                        <p>consultant at <a href="http://www.vertoanalytics.com/">Verto Analytics</a>&nbsp;&nbsp;<i class="em em-iphone"></i></p>
+                        <p>executive at <a href="http://www.kairossociety.org">Kairos Society</a>&nbsp;&nbsp;<i class="em em-earth_americas"></i></p>
+                        </p>
                   </div>
                 
-                  <div class="column">
-                       <h2>Past</h2>
-            <p>student fellow at <a href="http://www.roughdraft.vc/">Rough Draft Ventures</a>&nbsp;&nbsp;<i class="em em-dollar"></i><br>
-               product intern at <a href="http://www.flywire.com/">Flywire</a>&nbsp;&nbsp;<i class="em em-airplane"></i><br>
-               co-founder at <a href="http://www.getvidvision.com">Vidvision</a>  (<a href=http://www.babson.edu/Academics/centers/blank-center/butler-launch-pad/summer-venture-program/Pages/summer-venture-program.aspx>svp '17</a>)&nbsp;&nbsp;<i class="em em-video_camera"></i><br>
-               president of <a href="http://www.etower.org/">eTower</a>&nbsp;&nbsp;<i class="em em-house"></i><br>
-            </p>       
+                  <div class="col-md-4">
+                    <h2>Past</h2>
+                        <p>student fellow at <a href="http://www.roughdraft.vc/">Rough Draft Ventures</a>&nbsp;&nbsp;<i class="em em-dollar"></i></p>
+                        <p>product intern at <a href="http://www.flywire.com/">Flywire</a>&nbsp;&nbsp;<i class="em em-airplane"></i></p>
+                        <p>co-founder at <a href="http://www.getvidvision.com">Vidvision</a>  (<a href=http://www.babson.edu/Academics/centers/blank-center/butler-launch-pad/summer-venture-program/Pages/summer-venture-program.aspx>svp '17</a>)&nbsp;&nbsp;<i class="em em-video_camera"></i></p>
+                        <p>president of <a href="http://www.etower.org/">eTower</a>&nbsp;&nbsp;<i class="em em-house"></i><br>
+                        </p>       
                   </div>
                 
-                  <div class="column">
+                  <div class="col-md-4">
                        <h2>Future</h2>
-            <p>Product Manager at <a href="http://www.wayfair.com/">Wayfair</a>&nbsp;&nbsp;<i class="em em-couch_and_lamp"></i>
+                      <p>product manager at <a href="http://www.wayfair.com/">Wayfair</a>&nbsp;&nbsp;<i class="em em-couch_and_lamp"></i></p>
                   </div>
             </div>    
-        </div>
+        </div> 
         
-        <div id="travels">
+        <!-- <div id="travels">
             <div class="row">
                 
                   <div class="column">
@@ -196,9 +228,9 @@
                 
             </div>
 
-        </div>
+        </div>-->
         
-        <script>
+        <!--<script>
             $('#derek').hover(function() {
                   $(this).attr('src', 'altpic.jpg');
                 }, function() {
@@ -208,7 +240,7 @@
             (function(){
                 
                 
-            var imgLen = document.getElementById('imgGallary');
+           var imgLen = document.getElementById('imgGallary');
             var images = imgLen.getElementsByTagName('img');
             var counter = 1;
 
@@ -224,7 +256,7 @@
                         },4000);
                     }
             })();
-        </script>
+        </script>-->
         
     </body>
     
